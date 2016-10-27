@@ -1,0 +1,14 @@
+<div>
+  <header></header>
+
+  <div id="border" class="media-body">
+    <h3>Type Of Cars</h3>
+
+    <li ng-repeat="cars in result.models">
+      <b> 
+         	<a href="#/carDetails"  ng-click="stores(cars.years[0].styles[0].id)">{{cars.name}}</a>
+         </b>
+    </li>
+
+  </div>
+</div>

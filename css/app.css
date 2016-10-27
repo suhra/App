@@ -1,0 +1,75 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+.navbar-inverse .navbar-brand {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+    font-weight: 900;
+    color: white;
+}
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    color: white;
+}
+#box {
+    background-color: #333;
+    opacity: 0.65;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#border {
+    background-color: #333;
+    opacity: 0.65;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.media-body {
+    color: white;
+    font-size: 17px;
+    padding: 4px;
+    margin-bottom: 25px;
+}
+.media {
+    background-color: #333;
+    opacity: 0.8;
+    border-radius: 4px;
+    color: white;
+    width: 500px;
+    border: 1px solid black;
+}
+img {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.img:hover {
+    border: 1px solid #777;
+}
+div.img img {
+    width: 100%;
+    height: auto;
+}
+.nav-pills>li {
+    padding-left: 130px;
+    padding-bottom: 8px;
+}
+.media-img {
+    background-color: #333;
+    opacity: 0.8;
+    border-radius: 4px;
+    width: 400px;
+    border: 1px solid black;
+}

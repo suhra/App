@@ -1,0 +1,14 @@
+<div>
+    <header></header>
+
+    <div class="media">
+        <div ng-repeat="cars in result | limitTo : 10">
+
+            <div class="img">
+                <a href="http://media.ed.edmunds-media.com{{cars.photoSrcs[0]}}">
+                    <img ng-src="http://media.ed.edmunds-media.com{{cars.photoSrcs[0]}}">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
