@@ -1,4 +1,4 @@
-app.controller('carDetailsController',['$scope', '$http', '$carDetailService', function($scope, $http, carDetailService) {
+app.controller('carDetailsController',['$scope', '$http', 'carDetailService', function($scope, $http, carDetailService) {
 
     var id = localStorage.style1;
 
