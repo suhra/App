@@ -1,0 +1,15 @@
+<div>
+  <header></header>
+  
+  <div ng-show="errorText"><h1>No results found!!</h1></div>
+  <div ng-show="preview">
+    <div class="col-sm-12 col-md-12">
+      <div class="media-body" id="box">
+       <h1>{{preview.title}}</h1>
+       <div ng-bind-html="sanitizeHtml(preview.introduction)"></div>
+       <a target="_blank" href="{{preview.link.href}}"><h4>Visit Edmunds.com</h4></a>
+     </div>
+   </div>
+   <a href="#/carTypes">{{car}}<h3>Type of cars</h3></a>
+ </div>
+</div>

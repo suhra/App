@@ -1,23 +1,17 @@
 <div>
   <header></header>
-
-
   <div class="media">
     <div class="media-left media-top">
-      <h3>{{preview.model.name}}</h3>
-
-
+      <h1>{{preview.model.name}}</h1>
       <ul>
-
-
         <li>
-          <b>EPAClass: {{preview.categories.EPAClass}}
+          <b>EPAClass: {{preview.categories.EPAClass}}</b>
         </li>
         <li>
-          <b>Market: {{preview.categories.market}}
+          <b>Market: {{preview.categories.market}}</b>
         </li>
         <li>
-          <b>Size: {{preview.categories.vehicleSize}}
+          <b>Size: {{preview.categories.vehicleSize}}</b>
         </li>
         <li>
           <b>Code: {{preview.engine.code}}</b>
@@ -36,31 +30,22 @@
         </li>
         <li>
           <b>Gear Type: {{preview.engine.valve.gear}}
+          </li>
+          <li>
+            <b>Horse Power: {{preview.engine.horsepower}}</b>
+          </li>
+        </ul>
+      </div>
+      <div class="img">
+        <a  target="_blank" href="http://media.ed.edmunds-media.com{{result[0].photoSrcs[0]}}">
+          <img ng-src="http://media.ed.edmunds-media.com{{result[0].photoSrcs[0]}}">
+        </a>
+      </div>
+      <div class="clearfix"></div>
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#/carImages" ng-click="stores(preview.engine.id)">View Gallery >> </a>
         </li>
-        <li>
-          <b>Horse Power: {{preview.engine.horsepower}}</b>
-        </li>
-
-
       </ul>
     </div>
-
-
-    <div class="img">
-      <a href="http://media.ed.edmunds-media.com{{result[0].photoSrcs[0]}}">
-        <img ng-src="http://media.ed.edmunds-media.com{{result[0].photoSrcs[0]}}">
-      </a>
-    </div>
-
-
-    <div class="clearfix"></div>
-
-
-    <ul class="nav nav-pills">
-      <li class="active"><a href="#/carImages" ng-click="stores(preview.engine.id)">View Gallery >> </a>
-      </li>
-    </ul>
-
-
   </div>
-</div>

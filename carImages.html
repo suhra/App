@@ -1,14 +1,12 @@
 <div>
-    <header></header>
-
-        <div ng-repeat="cars in result | limitTo : 10">
-
-            <div class="img">
-                <a href="http://media.ed.edmunds-media.com{{cars.photoSrcs[0]}}">
-                    <img ng-src="http://media.ed.edmunds-media.com{{cars.photoSrcs[0]}}">
-                </a>
-            </div>
-
+  <header></header>
+  <div class="col-sm-12 col-md-12">
+    <div ng-repeat="cars in result | limitTo : 10">
+      <div class="img">
+        <a target="_blank" href="http://media.ed.edmunds-media.com{{cars.photoSrcs[0]}}">
+          <img ng-src="http://media.ed.edmunds-media.com{{cars.photoSrcs[0]}}">
+        </a>
+      </div>
     </div>
-   
+  </div> 
 </div>
